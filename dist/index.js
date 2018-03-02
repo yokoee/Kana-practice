@@ -45,7 +45,7 @@ $(document).ready(function () {
     function setKana() {
         var index = Math.floor(Math.random() * kana.length);
         var nextKana = kana[index];
-        var isHiragana = Boolean(Math.random() * 2);
+        var isHiragana = Boolean(Math.floor(Math.random() * 2));
         if (isHiragana) {
             $('.kana>span').text(nextKana.hiragana);
             $('.other-kana').text(nextKana.katakana);
