@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.roman {
+    visibility: hidden;
+    font-size: 3rem;
+    color: #5e5e5e;
+}
+
+.kana {
+    font-size: 8rem;
+    color: #2e2e2e;
+    position: relative;
+}
+
+.other-kana {
+    visibility: hidden;
+    font-size: 3rem;
+    color: #5e5e5e;
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-pronounce {
+    color: #2e2e2e;
+    cursor: pointer;
+}
+
+.btn-pronounce:active {
+    color: #FFC633;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #efefef;
+    color: #FFC633;
+}
+
+#setting {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#setting>i {
+    cursor: pointer;
+}
+
+#setting>i:active {
+    color: #FFC633;
+}
+
+form[name=option] {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    width: 5em;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px #5e5e5e;
+}
+
+form[name=option]>div {
+    margin-top: 10px;
+}
+
+form[name=option]>div:first-child {
+    margin-top: 0;
+}

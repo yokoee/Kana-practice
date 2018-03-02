@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kana</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <div class="roman">a</div>
+            <div class="kana">
+                <span>あ</span>
+                <div class="other-kana">ア</div>
+            </div>
+            <div class="btn-pronounce"><i class="material-icons">volume_up</i></div>
+        </div>
+
+        <div id="btns">
+            <button class="btn-tip btn"><i class="material-icons">visibility</i></button>
+            <button class="btn-next btn"><i class="material-icons">navigate_next</i></button>
+        </div>
+    </div>
+    <div id="setting">
+        <i class="material-icons">settings</i>
+        <form name="option">
+            <div><input type="checkbox" name="yinjie" value="qingyin" checked>清音</div>
+            <div><input type="checkbox" name="yinjie" value="zhuoyin">浊音</div>
+        </form>
+
+    </div>
+    <audio id="pronounce" src="assets/pronounce/a.ogg"></audio>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/index.js"></script>
+</body>
+
+</html>
