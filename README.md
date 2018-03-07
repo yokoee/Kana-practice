@@ -1,0 +1,1 @@
+一个用来记日语假名的简单页面：[传送门->](https://yokoee.github.io/kana-practice/)
